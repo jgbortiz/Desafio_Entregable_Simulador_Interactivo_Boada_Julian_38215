@@ -1,5 +1,5 @@
-/* 
-//funcion dividir
+
+//Funcion Dividir
 function dividir (n1,n2){
     return n1 / n2
 }
@@ -22,9 +22,8 @@ let numeroDos = Number(prompt("Ingrese  segundo numero que desea dividir"));
 } 
 alert(`${nombre_usuario},Gracias por utilizar nuestro divisor`);
 
-//Cargando productos DOBAL MUEBLES INDUSTRIALES
- */
 
+//Cargando productos DOBAL MUEBLES INDUSTRIALES
 
 /* 
 Mesa ratona elevable
@@ -34,7 +33,7 @@ Mesa paraíso
 Rack estilo industrial
 Mesa ratona elevadle / con espacio de guardado */
 
-
+/* 
 class Productos{
     constructor(codigo,nombre, medidas,precio){
         this.codigo=codigo;
@@ -56,6 +55,7 @@ const prod6 = new Productos (06,"Mesa ratona elevadle","",560000);
 
 console.log(prod2.nombre)
 console.log(prod1.sumaIva(prod1))
+console.log(Productos.length)
+*/
 
-//console.log(Productos.length)
 
