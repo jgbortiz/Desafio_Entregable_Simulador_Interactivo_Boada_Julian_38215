@@ -1,9 +1,14 @@
 
 //Funcion Dividir
-function dividir (n1,n2){
+/* function dividir (n1,n2){
     return n1 / n2
+} */
+const dividir = (n1,n2)=>{
+    return n1/n2
 }
 //le pedimos el nombre al usuario por teclado
+
+
 let nombre_usuario =prompt("Ingrese su nombre");
 alert(`${nombre_usuario} vienvenido a nuestro divisor automatico\nPodra realizar 4 opraciones`);
 
@@ -16,12 +21,11 @@ let numeroDos = Number(prompt("Ingrese  segundo numero que desea dividir"));
         break;  
     }else
     alert(`Operacion Nro:${i}\n${numeroUno} / ${numeroDos} = ${dividir(numeroUno,numeroDos)}`)
-    
-    
+
 } 
 alert(`${nombre_usuario},Gracias por utilizar nuestro divisor`);
 
-
+ 
 //Cargando productos DOBAL MUEBLES INDUSTRIALES
 
 class Producto{
@@ -35,13 +39,10 @@ class Producto{
         
         
     }
-
 }
 
 let myArray = []
-
-
-
+//Pusheamos los productos en el array "myArray"
 let prod1 = new Producto (01,"MESA DE LUZ","NEGRO/BLANCO","ENCHAPADA EN PARAISO","50X30X35",49200);
 myArray.push(prod1)
 let prod2 = new Producto (02,"MESA RATONA ELEVABLE","NEGRO/BLANCO","ENCHAPADA EN PARAISO","85X50X45",51200);
@@ -59,14 +60,14 @@ myArray.push(prod6)
 myArray.forEach(product =>{
     console.log(product)
 });
-
+//Recorremos el Array myArray
 console.log(Array.isArray(myArray));
 console.log(myArray.length);
 
-//recorremos productos
+//recorremos los precios en myArray
 const precioDeLosProductos = myArray.map(dato=>dato.precio);
 console.log(precioDeLosProductos);
-//array de 50% de descuento
+//New array de 50% de descuento.
 const preciosConDescuento = myArray.map((dato)=>{
     return{
         nombre: dato.nombre,
