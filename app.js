@@ -30,9 +30,12 @@ compras.forEach(producto => {
 
 alert(mensajeFinal + mensaje );
 
-//suma total de todos los productos
+console.log(compras)
 
-const valorInicial=0
-const sumaprecios= precioDeLosProductos.reduce((acumulador , elemento)=>acumulador+elemento,valorInicial);
-console.log(`La suma total de los de los precios de todos los productos es: $${sumaprecios}`);
- 
+const guardarLocal =(mueble,precio) => {localStorage.setItem(mueble,precio)};
+//Almacenar producto por producto
+for(const producto of compras){
+    guardarLocal(producto.id,JSON.stringify(producto));
+}
+// o almacenar array completo
+guardarLocal("listaproductos",JSON.stringify(compras));

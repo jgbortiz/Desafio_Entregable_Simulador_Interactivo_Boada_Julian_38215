@@ -10,6 +10,10 @@ button.addEventListener("click", (e)=>{
     const data = {
         username: username.value,
         password: password.value
+
     }
-    alert(data)
+   let mensaje = document.createElement("h2")
+
+   mensaje.innerHTML = `<h2>Bienvenido ${username.value}</h2>`
+   contenedor.appendChild(mensaje)
 })
